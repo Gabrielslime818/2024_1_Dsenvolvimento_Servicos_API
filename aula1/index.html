@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="minhaDiv">
+        oi
+    </div>
+    <button onclick="alterar()">clica ai </button>
+    <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+    <ol id="Lista">
+        
+        
+    </ol>
+
+    <script>    
+        var mDiv = document.getElementById("minhaDiv");
+        var conteudo = mDiv.innerHTML +"galerinha! <hr>";
+        var mLista = document.getElementById("Lista")
+        var novo = mLista.innerHTML+ " <li>oi</li>"
+
+        
+        //document.write("Bom dia <i> Pessoal! </i>")
+        //window.alert("") ou só alert("")
+       // console.log("Escrevendo no console!");
+    function alterar(){
+        mLista.innerHTML += novo;
+        mDiv.style.background = "#f00";
+        mDiv.style.width= "50%"
+        mDiv.setAttribute("align" , "center")
+    
+    
+    }
+    </script>
+
+</body>
+</html>
